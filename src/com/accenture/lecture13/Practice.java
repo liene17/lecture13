@@ -2,11 +2,6 @@ package com.accenture.lecture13;
 
 public class Practice {
 
-	public static void sayHi() {
-		System.out.println("Hello World");
-
-	}
-
 	public static void main(String[] args) {
 		int[] myArrays = new int[10];
 		for (int i = 0; i < myArrays.length; i++) {
@@ -43,6 +38,7 @@ public class Practice {
 		// 1 element is 2
 		// ...
 		// 9 element is 18
+
 		printArray(myArrays);
 
 		// Task 2 - getSum() should return sum of all elements of passed array
@@ -114,14 +110,24 @@ public class Practice {
 
 	}
 
+	public static void sayHi() {
+		System.out.println("Hello World");
+	}
+
 	public static void printArray(int[] someArray) {
-		// TODO should print out into console content of someArray
+		int[] myArrays = new int[10];
+		for (int i = 0; i < myArrays.length; i++) {
+			myArrays[i] = i * 2;
+			System.out.println("" + i + " element is " + myArrays[i]);
+		}
 	}
 
 	public static int getSum(int[] someArray) {
-		// TODO implement method, that it will return sum of all elements of
-		// passed in array 'someArray'
-		return 0;
+		int sum = 0;
+		for (int i = 0; i < someArray.length; i++) {
+			sum = sum + someArray[i];
+		}
+		return sum;
 	}
 
 	public static int getAvarege(int[] someArray) {
