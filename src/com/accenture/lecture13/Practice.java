@@ -55,8 +55,8 @@ public class Practice {
 		// Task 3.1 - declare method getMaxValue(), it should return biggest
 		// element value of array
 		// You should get printed out into console: Maximum is 18.0
-		// int max = getMaxValue(myArrays);
-		// System.out.println("Maximum is " + max);
+		int max = getMaxValue(myArrays);
+		System.out.println("Maximum is " + max);
 
 		// Task 3.2 - declare method getAvaregeDouble(), it should return sum of
 		// all elements of passed array
@@ -144,6 +144,17 @@ public class Practice {
 		System.out.println("Enter " + numbers + "thy:");
 		// TODO implement method, according to requirements of Task 8
 		return null;
+	}
+
+	public static int getMaxValue(int[] someArray) {
+		int max = someArray[0];
+		for (int i = 0; i < someArray.length; i++) {
+			if (someArray[i] > max) {
+				max = someArray[i];
+			}
+		}
+		return max;
+
 	}
 
 }
