@@ -61,8 +61,8 @@ public class Practice {
 		// Task 3.2 - declare method getAvaregeDouble(), it should return sum of
 		// all elements of passed array
 		// You should get printed out into console: Average is 9.0
-		// double doubleAvarege = getAvaregeDouble(myArrays);
-		// System.out.println("Avarege double value is " + doubleAvarege);
+		double doubleAverage = getAverageDouble(myArrays);
+		System.out.println("Avarege double value is " + doubleAverage);
 
 		// Task 4 - getArrayDefinedByUser() - should ask user to fill array of 3
 		// elements and return that array
@@ -157,4 +157,14 @@ public class Practice {
 
 	}
 
+	public static double getAverageDouble(int[] someArray) {
+		double average = 0;
+		int sum = 0;
+		for (int i = 0; i < someArray.length; i++) {
+			sum = sum + someArray[i];
+		}
+		average = sum / someArray.length;
+		return average;
+
+	}
 }
