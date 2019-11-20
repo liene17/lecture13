@@ -12,11 +12,6 @@ public class Practice {
 		for (int i = 0; i < myArrays.length; i++) {
 			myArrays[i] = i * 2;
 
-			int element = 0;
-			element++;
-			System.out.println(element + " element is " + myArrays[i]);
-			
-
 		}
 
 		// Task 0 - move "Hello world" output into method sayHi() and call it
@@ -38,6 +33,10 @@ public class Practice {
 		// 7 element is 14
 		// 8 element is 16
 		// 9 element is 18
+
+		for (int i = 0; i < myArrays.length; i++) {
+			System.out.println("" + i + " element is " + myArrays[i]);
+		}
 
 		// Task 1.1 - printArray() should do the same logic as above code
 		// 0 element is 0
