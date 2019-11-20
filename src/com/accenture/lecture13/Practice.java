@@ -1,10 +1,10 @@
 package com.accenture.lecture13;
 
 public class Practice {
-	
-	public static String sayHi(){
-		return "Hello World"; 
-		
+
+	public static void sayHi() {
+		System.out.println("Hello World");
+
 	}
 
 	public static void main(String[] args) {
@@ -12,10 +12,10 @@ public class Practice {
 		for (int i = 0; i < myArrays.length; i++) {
 			myArrays[i] = i * 2;
 
-		int element = 0; 
-		element++; 
+			int element = 0;
+			element++;
+			System.out.println(element + " element is " + myArrays[i]);
 			
-		System.out.println(element++ + " element is " + myArrays[i] );
 
 		}
 
@@ -24,9 +24,8 @@ public class Practice {
 		// You should get printed out into console:
 		// Hello world
 		// Hello world
-		Practice example = new Practice(); 
-		System.out.println(example.sayHi());
-		System.out.println(example.sayHi());
+		sayHi();
+		sayHi();
 
 		// Task 1 - print out into console content of myArray, as following
 		// 0 element is 0
