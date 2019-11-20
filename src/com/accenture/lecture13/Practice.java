@@ -49,22 +49,22 @@ public class Practice {
 		// Task 3 - getAvarege() should return average of all elements of passed
 		// array
 		// Here you should get printed out into console: Average is 9
-		int avarege = getAvarege(myArrays);
-		System.out.println("Avarege is " + avarege);
+		int average = getAverage(myArrays);
+		System.out.println("Average is " + average);
 
-		// Task 4.1 - declare method getMaxValue(), it should return biggest
+		// Task 3.1 - declare method getMaxValue(), it should return biggest
 		// element value of array
 		// You should get printed out into console: Maximum is 18.0
 		// int max = getMaxValue(myArrays);
 		// System.out.println("Maximum is " + max);
 
-		// Task 4.2 - declare method getAvaregeDouble(), it should return sum of
+		// Task 3.2 - declare method getAvaregeDouble(), it should return sum of
 		// all elements of passed array
 		// You should get printed out into console: Average is 9.0
 		// double doubleAvarege = getAvaregeDouble(myArrays);
 		// System.out.println("Avarege double value is " + doubleAvarege);
 
-		// Task 5 - getArrayDefinedByUser() - should ask user to fill array of 3
+		// Task 4 - getArrayDefinedByUser() - should ask user to fill array of 3
 		// elements and return that array
 		// Possible console content:
 		// Enter 3thy:
@@ -130,7 +130,7 @@ public class Practice {
 		return sum;
 	}
 
-	public static int getAvarege(int[] someArray) {
+	public static int getAverage(int[] someArray) {
 		int average = 0;
 		int sum = 0;
 		for (int i = 0; i < someArray.length; i++) {
