@@ -53,13 +53,14 @@ public class ObjectPractice {
 		// temperature for days
 		// method signature: public double getWeekAverage()
 		// Output: Average temperature in Latvia will be 1.8
-		 System.out.println("Average temperature in Latvia will be "+latvia.getWeekAverage());
+		System.out.println("Average temperature in Latvia will be "
+				+ latvia.getWeekAverage());
 
 		// Task 8 - Create a method in class Weather which will return highest
 		// temperature
 		// Output: Highest temperature in Latvia will be 6
-		// System.out.println("Highest temperature in Latvia will be" +
-		// latvia.getHottestTemperature());
+		System.out.println("Highest temperature in Latvia will be "
+				+ latvia.getHottestTemperature());
 
 		// Task 9 - Create a method in class Weather which will return hottest
 		// day name, lets assume:

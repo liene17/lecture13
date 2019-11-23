@@ -50,4 +50,13 @@ public class Weather {
 		average = getSum() / daysWeather.length;
 		return average;
 	}
+	public int getHottestTemperature(){
+		int highest = 0; 
+		for (int i = 0; i < daysWeather.length; i++) {
+			if (daysWeather[i] > highest) {
+				highest = daysWeather[i];
+			}
+		}
+		return highest;
+	}
 }
