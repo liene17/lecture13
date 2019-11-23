@@ -18,7 +18,7 @@ public class Weather {
 
 	}
 
-	public String printArray() {
+	public String toString() {
 		String result = "";
 		for (int i = 0; i < daysWeather.length; i++) {
 			if (i < daysWeather.length - 1) {
