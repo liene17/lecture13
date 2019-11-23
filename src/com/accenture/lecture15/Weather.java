@@ -1,10 +1,20 @@
 package com.accenture.lecture15;
 
 public class Weather {
-	String country; // for which forecast is prepared.
-	int[] daysWeather; // temperature information for next week (7 days)
+	private final String country; // for which forecast is prepared.
+	private int[] daysWeather; // temperature information for next week (7 days)
 
-	public Weather(String country, int[] daysWeater) {
+	public String getCountry() {
+		return country;
+	}
+
+	public int[] getDaysWeather() {
+		return daysWeather;
+	}
+
+	public Weather(String country, int[] daysWeather) {
+		this.country = country;
+		this.daysWeather = daysWeather;
 
 	}
 
