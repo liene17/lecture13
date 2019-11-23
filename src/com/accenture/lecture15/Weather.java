@@ -71,36 +71,47 @@ public class Weather {
 		for (int i = 0; i < daysWeather.length; i++) {
 			if (daysWeather[i] > highest) {
 				highest = daysWeather[i];
-				index = i + 1;
-			}
-			switch (index) {
-			case 1:
-				dayName = "Monday";
-				break;
-			case 2:
-				dayName = "Tuesday";
-				break;
-			case 3:
-				dayName = "Wednesday";
-				break;
-			case 4:
-				dayName = "Thursday";
-				break;
-			case 5:
-				dayName = "Friday";
-				break;
-			case 6:
-				dayName = "Saturday";
-				break;
-			case 7:
-				dayName = "Sunday";
-				break;
-			default:
-				dayName = "Invalid day";
-				break;
+				index = i;
 			}
 		}
+		switch (index) {
+		case 0:
+			dayName = "Monday";
+			break;
+		case 1:
+			dayName = "Tuesday";
+			break;
+		case 2:
+			dayName = "Wednesday";
+			break;
+		case 3:
+			dayName = "Thursday";
+			break;
+		case 4:
+			dayName = "Friday";
+			break;
+		case 5:
+			dayName = "Saturday";
+			break;
+		case 6:
+			dayName = "Sunday";
+			break;
+		default:
+			dayName = "Invalid day";
+			break;
+		}
+
 		return dayName;
 
+	}
+
+	public int getColdestTemperature() {
+		int lowest = 0;
+		for (int i = 0; i < daysWeather.length; i++) {
+			if (daysWeather[i] < lowest) {
+				lowest = daysWeather[i];
+			}
+		}
+		return lowest;
 	}
 }

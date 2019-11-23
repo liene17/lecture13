@@ -74,8 +74,8 @@ public class ObjectPractice {
 		// Task 10 - Create a method in class Weather which will return highest
 		// temperature
 		// Output: Lowest temperature in Latvia will be -2
-		// System.out.println("Lowest temperature in Latvia will be"
-		// +latvia.getColdestTemperature());
+		System.out.println("Lowest temperature in Latvia will be "
+		+latvia.getColdestTemperature());
 
 		// Task 11 - Create a method in class Weather which will return coldest
 		// day name:
