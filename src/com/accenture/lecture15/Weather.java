@@ -34,7 +34,20 @@ public class Weather {
 	// }
 
 	public String toString() {
-		return "Weather forecast in " + getCountry() + "for next days "
+		return "Weather forecast in " + getCountry() + " for next days "
 				+ Arrays.toString(getDaysWeather());
+		
+	}
+	public double getSum(){
+		double sum = 0;
+		for (int i = 0; i < daysWeather.length; i++) {
+			sum = sum + daysWeather[i];
+		}
+		return sum; 
+	}
+	public double getWeekAverage(){
+		double average = 0;
+		average = getSum() / daysWeather.length;
+		return average;
 	}
 }
