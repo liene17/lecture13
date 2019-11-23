@@ -36,27 +36,71 @@ public class Weather {
 	public String toString() {
 		return "Weather forecast in " + getCountry() + " for next days "
 				+ Arrays.toString(getDaysWeather());
-		
+
 	}
-	public double getSum(){
+
+	public double getSum() {
 		double sum = 0;
 		for (int i = 0; i < daysWeather.length; i++) {
 			sum = sum + daysWeather[i];
 		}
-		return sum; 
+		return sum;
 	}
-	public double getWeekAverage(){
+
+	public double getWeekAverage() {
 		double average = 0;
 		average = getSum() / daysWeather.length;
 		return average;
 	}
-	public int getHottestTemperature(){
-		int highest = 0; 
+
+	public int getHottestTemperature() {
+		int highest = 0;
 		for (int i = 0; i < daysWeather.length; i++) {
 			if (daysWeather[i] > highest) {
 				highest = daysWeather[i];
 			}
 		}
 		return highest;
+	}
+
+	public String getHottestDayName() {
+
+		int highest = 0;
+		int index = 0;
+		String dayName = null;
+		for (int i = 0; i < daysWeather.length; i++) {
+			if (daysWeather[i] > highest) {
+				highest = daysWeather[i];
+				index = i + 1;
+			}
+			switch (index) {
+			case 1:
+				dayName = "Monday";
+				break;
+			case 2:
+				dayName = "Tuesday";
+				break;
+			case 3:
+				dayName = "Wednesday";
+				break;
+			case 4:
+				dayName = "Thursday";
+				break;
+			case 5:
+				dayName = "Friday";
+				break;
+			case 6:
+				dayName = "Saturday";
+				break;
+			case 7:
+				dayName = "Sunday";
+				break;
+			default:
+				dayName = "Invalid day";
+				break;
+			}
+		}
+		return dayName;
+
 	}
 }
