@@ -46,7 +46,7 @@ public class ObjectPractice {
 			System.out.println(latvia);
 
 		// Send a link of your github repository to lecturer in slack
-		// Wait until everyone will reach that point eiter ask for extra task
+		// Wait until everyone will reach that point either ask for extra task
 		// -------------------------------------------------------------------------------------
 
 	}

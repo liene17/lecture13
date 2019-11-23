@@ -1,5 +1,7 @@
 package com.accenture.lecture15;
 
+import java.util.Arrays;
+
 public class Weather {
 	private final String country; // for which forecast is prepared.
 	private int[] daysWeather; // temperature information for next week (7 days)
@@ -18,17 +20,21 @@ public class Weather {
 
 	}
 
+	// public String toString() {
+	// String result = "";
+	// for (int i = 0; i < daysWeather.length; i++) {
+	// if (i < daysWeather.length - 1) {
+	// result = result + daysWeather[i] + ", ";
+	// } else {
+	// result = result + daysWeather[i];
+	//
+	// }
+	// }
+	// return "Weather forecast in " + country + " for next days " + result;
+	// }
+
 	public String toString() {
-		String result = "";
-		for (int i = 0; i < daysWeather.length; i++) {
-			if (i < daysWeather.length - 1) {
-				result = result + daysWeather[i] + ", ";
-			} else {
-				result = result + daysWeather[i];
-
-			}
-		}
-		return "Weather forecast in " + country + " for next days " + result;
+		return "Weather forecast in " + getCountry() + "for next days "
+				+ Arrays.toString(getDaysWeather());
 	}
-
 }
