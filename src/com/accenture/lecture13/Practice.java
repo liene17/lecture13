@@ -1,5 +1,7 @@
 package com.accenture.lecture13;
 
+import java.util.Scanner;
+
 public class Practice {
 
 	public static void main(String[] args) {
@@ -75,15 +77,15 @@ public class Practice {
 		// 1 element is 6
 		// 2 element is 7
 		int[] myIntegers = getArrayDefinedByUser(3);
-		printArray(myIntegers);
+		//printArray(myIntegers);
 
-		// Task 6 - make sure getAvarege() and getAvaregeDouble() methods uses
+		// Task 5 - make sure getAvarege() and getAvaregeDouble() methods uses
 		// getSum() method
 		// their shouldn't have duplicated logic with sum() method
 
-		// Task 7 - rewrite printArray() to use enhanced loop
+		// Task 6 - rewrite printArray() to use enhanced loop
 
-		// Task 8 - create your own method, which
+		// Task 7 - create your own method, which
 		// - at first, will ask user how big array he wants to create *you will
 		// need to use Scanner class
 		// - after user should enter in console value for each element of an
@@ -140,9 +142,17 @@ public class Practice {
 		return average;
 	}
 
-	public static int[] getArrayDefinedByUser(int numbers) {
-		System.out.println("Enter " + numbers + "thy:");
-		// TODO implement method, according to requirements of Task 8
+	public static int[] getArrayDefinedByUser(int arrayLenght) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a number, please: ");
+
+		int[] myArrays = new int[3];
+		for (int i = 0; i < myArrays.length; i++) {
+
+			int input = scanner.nextInt();
+			System.out.println(i + " element is " + input);
+			continue;
+		}
 		return null;
 	}
 
