@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Weather {
 	private final String country; // for which forecast is prepared.
 	private int[] daysWeather; // temperature information for next week (7 days)
-	
 
 	public String getCountry() {
 		return country;
@@ -66,18 +65,18 @@ public class Weather {
 
 	public String getHottestDayName() {
 		String dayName = getDayNameFromIndex(getHottestTemperatureIndex());
-			
+
 		return dayName;
-	
+
 	}
-	
+
 	private int getHottestTemperatureIndex() {
 		int highest = 0;
-		int index=0;
+		int index = 0;
 		for (int i = 0; i < daysWeather.length; i++) {
 			if (daysWeather[i] > highest) {
 				highest = daysWeather[i];
-				index=i;
+				index = i;
 			}
 		}
 		return index;
@@ -92,29 +91,30 @@ public class Weather {
 		}
 		return lowest;
 	}
+
 	private int getColdestTemperatureIndex() {
 		int lowest = 0;
-		int index=0;
+		int index = 0;
 		for (int i = 0; i < daysWeather.length; i++) {
 			if (daysWeather[i] < lowest) {
 				lowest = daysWeather[i];
-				index=i;
+				index = i;
 			}
 		}
 		return index;
 	}
+
 	public String getColdestDayName() {
 		String dayName = getDayNameFromIndex(getColdestTemperatureIndex());
-			
+
 		return dayName;
-	
+
 	}
-	
+
 	public String getDayNameFromIndex(int index) {
-		//int index = getColdestTemperatureIndex();
-		String dayName=" ";	
-		 
-		
+		// int index = getColdestTemperatureIndex();
+		String dayName = " ";
+
 		switch (index) {
 		case 0:
 			dayName = "Monday";
@@ -144,5 +144,16 @@ public class Weather {
 
 		return dayName;
 
+	}
+
+	public void printAdvancedInformation() {
+		System.out.println("In " + country
+				+ " during next 7 day will be following weather "
+				+ Arrays.toString(getDaysWeather())
+				+ ", the highest temperature will be on " + getHottestDayName()
+				+ " +" + getHottestTemperature()
+				+ " degree, the lowest temperature will be on "
+				+ getColdestDayName() + " " + getColdestTemperature()
+				+ " degree");
 	}
 }
