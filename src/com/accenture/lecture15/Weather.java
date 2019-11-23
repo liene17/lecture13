@@ -18,10 +18,17 @@ public class Weather {
 
 	}
 
-	public String toString() {
-		return "Weather forecast in " + country + " for next days "
-				+ daysWeather;
+	public String printArray() {
+		String result = "";
+		for (int i = 0; i < daysWeather.length; i++) {
+			if (i < daysWeather.length - 1) {
+				result = result + daysWeather[i] + ", ";
+			} else {
+				result = result + daysWeather[i];
 
+			}
+		}
+		return "Weather forecast in " + country + " for next days " + result;
 	}
 
 }
