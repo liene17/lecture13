@@ -1,14 +1,17 @@
 package com.accenture.lecture16;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Warrior {
 	private String name;
 	private int initialHealth;
-	private int damagePower; 
+	private int damagePower;
 
 	public Warrior(String name, int initialHealth, int damagePower) {
 		this.name = name;
 		this.initialHealth = initialHealth;
-		this.damagePower = damagePower; 
+		this.damagePower = damagePower;
 	}
 
 	public String getName() {
@@ -18,11 +21,12 @@ public class Warrior {
 	public int getHealth() {
 		return initialHealth;
 	}
-	public int getDamagePower(){
-		return damagePower; 
+
+	public int getDamagePower() {
+		return damagePower;
 	}
 
-	private boolean isAlive() {
+	public boolean isAlive() {
 		boolean isAlive;
 		if (initialHealth > 0) {
 			isAlive = true;
@@ -39,7 +43,7 @@ public class Warrior {
 			System.out.println(this.name + " recieved damage, " + damage
 					+ " health now is: " + this.initialHealth);
 		} else {
-			System.out.println(this.name + " is dead! Fail!");
+			System.out.println(this.name + " is dead! Game over! Vitaly stooooop");
 		}
 
 	}
@@ -53,16 +57,17 @@ public class Warrior {
 			System.out.println("You are dead! Fail!");
 
 		}
-	
+
 	}
-	public void fight(Warrior anotherWarrior){
+
+	public void fight(Warrior anotherWarrior) {
 		int damage = anotherWarrior.getDamagePower();
-		this.recievedDamage(damage); 
+		this.recievedDamage(damage);
 	}
 
 	@Override
 	public String toString() {
-		return "Warrior [name=" + name + ", health=" + initialHealth
-				+ "]";
+		return "Warrior [name=" + name + ", health=" + initialHealth + "]";
 	}
+	
 }
