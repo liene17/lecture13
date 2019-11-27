@@ -12,12 +12,11 @@ public class WarriorApp {
 		// Warrior joker = new Warrior("Joker", 150, 38);
 
 		while (janka.isAlive() || vitaly.isAlive()) {
-			
+
 			janka.fight(vitaly);
 			vitaly.fight(janka);
 
 		}
-
 
 		ArrayList<String> fightClub = new ArrayList<>();
 		fightClub.add("Janka");
