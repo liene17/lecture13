@@ -2,10 +2,12 @@ package com.accenture.lecture17;
 
 public class Circle {
 
-	double radius = 2.3;
-	String color = "red";
+	double radius;
+	String color;
 
 	public Circle() {
+		this.radius = 2.3;
+		this.color = "red";
 
 	}
 
