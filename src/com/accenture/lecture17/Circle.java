@@ -28,7 +28,7 @@ public class Circle {
 	}
 
 	public String getColor() {
-		return color;
+		return color = color;
 	}
 
 	public void setColor(String color) {
@@ -37,7 +37,7 @@ public class Circle {
 
 	@Override
 	public String toString() {
-		return "Circle [Area is = " + getArea() + "]";
+		return "Circle area is = " + getArea() + "";
 	}
 
 	public double getArea() {

@@ -31,8 +31,8 @@ public class Cylinder extends Circle {
 
 	@Override
 	public String toString() {
-		return "Cylinder [Height is = " + height + ", radius=" + radius
-				+ ", getVolume()=" + getVolume() + "]";
+		return "Cylinder volume is = " + getVolume() + ", Cylinder color is = "
+				+ getColor() + "";
 	}
 
 	public double getVolume() {
