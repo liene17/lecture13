@@ -148,12 +148,19 @@ public class Weather {
 
 	public void printAdvancedInformation() {
 		System.out.println("In " + country
-				+ " during next 7 day will be following weather "
+				+ " during next 7 day will be following weather: "
 				+ Arrays.toString(getDaysWeather())
-				+ ", the highest temperature will be on " + getHottestDayName()
-				+ " +" + getHottestTemperature()
-				+ " degree, the lowest temperature will be on "
-				+ getColdestDayName() + " " + getColdestTemperature()
-				+ " degree");
+				+ ", the highest temp will be on " + getHottestDayName() + " +"
+				+ getHottestTemperature()
+				+ " degree, the lowest temp will be on " + getColdestDayName()
+				+ " " + getColdestTemperature() + " degree");
+	}
+
+	public void applyWarmCycloneEffect() {
+		int i;
+		for (i = 0; i < daysWeather.length; i++) {
+			daysWeather[i] = daysWeather[i] + 1;
+		}
+
 	}
 }

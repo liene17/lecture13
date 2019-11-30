@@ -16,8 +16,10 @@ public class TernaryOperatorTask {
 		// biggestValue = arg2;
 		// }
 
-		int biggestValue = (arg1 > arg2) ? arg1 : ((arg2 > arg3) ? arg2 : arg3);
-		System.out.println("The biggest value is: " + biggestValue);
+		int value = (arg1 > arg2) ? arg1 : arg2;
+		int max = (arg3 > value) ? arg3 : value; 
+		
+		System.out.println("The biggest value is: " + max);
 
 	}
 
