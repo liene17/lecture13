@@ -77,7 +77,7 @@ public class Practice {
 		// 1 element is 6
 		// 2 element is 7
 		int[] myIntegers = getArrayDefinedByUser(3);
-		//printArray(myIntegers);
+		printArray(myIntegers);
 
 		// Task 5 - make sure getAvarege() and getAvaregeDouble() methods uses
 		// getSum() method
